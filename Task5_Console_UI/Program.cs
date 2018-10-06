@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task5_Lib
+namespace Task5_Console_UI
 {
-    public class Class1
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }
