@@ -1,12 +1,24 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Task5_Lib;
+﻿// <copyright file="NumberConverters_TestClass.cs" company="My company">
+//     Copyright (c) My company". All rights reserved.
+// </copyright>
 
 namespace Task5_UnitTests
 {
+    using System;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Task5_Lib;
+
+    /// <summary>
+    /// Class with numberConverters tests
+    /// </summary>
     [TestClass]
     public class NumberConverters_TestClass
     {
+        /// <summary>
+        /// Test method for units
+        /// </summary>
+        /// <param name="initValue">Value to convert</param>
+        /// <param name="expected">String of converted value</param>
         [DataTestMethod]
         [DataRow(0, "zero")]
         [DataRow(1, "one")]
@@ -26,6 +38,11 @@ namespace Task5_UnitTests
             Assert.AreEqual(expected, NumberConverters.IntToString(initValue));
         }
 
+        /// <summary>
+        /// Tests for dozens
+        /// </summary>
+        /// <param name="initValue">Value to convert</param>
+        /// <param name="expected">String of converted value</param>
         [DataTestMethod]
         [DataRow(10, "ten")]
         [DataRow(20, "twenty")]
@@ -44,6 +61,11 @@ namespace Task5_UnitTests
             Assert.AreEqual(expected, NumberConverters.IntToString(initValue));
         }
 
+        /// <summary>
+        /// Tests for hundreds
+        /// </summary>
+        /// <param name="initValue">Value to convert</param>
+        /// <param name="expected">String of converted value</param>
         [DataTestMethod]
         [DataRow(100, "one hundred")]
         [DataRow(200, "two hundred")]
@@ -62,6 +84,11 @@ namespace Task5_UnitTests
             Assert.AreEqual(expected, NumberConverters.IntToString(initValue));
         }
 
+        /// <summary>
+        /// Different tests
+        /// </summary>
+        /// <param name="initValue">Value to convert</param>
+        /// <param name="expected">String of converted value</param>
         [DataTestMethod]
         [DataRow(11, "eleven")]
         [DataRow(12, "twelve")]
@@ -72,6 +99,7 @@ namespace Task5_UnitTests
         [DataRow(17, "seventeen")]
         [DataRow(18, "eighteen")]
         [DataRow(19, "nineteen")]
+        [DataRow(25, "twenty five")]
         [DataRow(145, "one hundred forty five")]
         [DataRow(6789, "six thousand seven hundred eighty nine")]
         [DataRow(987654321, "nine hundred eighty seven million six hundred fifty four thousand three hundred twenty one")]
@@ -80,6 +108,10 @@ namespace Task5_UnitTests
             Assert.AreEqual(expected, NumberConverters.IntToString(initValue));
         }
 
+        /// <summary>
+        /// Exceptions tests
+        /// </summary>
+        /// <param name="initValue">Value to convert</param>
         [DataTestMethod]
         [DataRow(-1234567890)]
         [DataRow(1234567890)]
