@@ -1,4 +1,4 @@
-﻿// <copyright file="NumberConverters_TestClass.cs" company="My company">
+﻿// <copyright file="NumberConverters_TestClass.cs"  company="My company">
 //     Copyright (c) My company". All rights reserved.
 // </copyright>
 

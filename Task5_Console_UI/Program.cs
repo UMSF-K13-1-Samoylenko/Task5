@@ -16,7 +16,7 @@ namespace Task5_Console_UI
         private static void Main(string[] args)
         {
             NumberConvertersMenu convertersMenu = new NumberConvertersMenu();
-            convertersMenu.ConsoleMenu();
+            convertersMenu.ConsoleMenu(args);
         }
     }
 }
