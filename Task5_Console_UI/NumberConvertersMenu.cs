@@ -46,7 +46,7 @@ namespace Task5_Console_UI
         private void Instruction()
         {
             Console.WriteLine("Program assignment" + Environment.NewLine +
-                "Finding series of natural numbers which sqare value is lower than N" + Environment.NewLine +
+                "Converting int number to its string view" + Environment.NewLine +
                 "Launch example: Task5_Console_UI.exe 123" + Environment.NewLine);
         }
     }
